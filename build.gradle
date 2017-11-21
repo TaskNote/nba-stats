@@ -7,6 +7,7 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.11.2'
     compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.2'
     compile group: 'org.tinylog', name: 'tinylog', version: '1.2'
 
