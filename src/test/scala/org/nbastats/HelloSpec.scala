@@ -8,4 +8,5 @@ class HelloSpec extends BaseSpec {
   def hello(): Unit = {
     1 + 1 should be (2)
   }
+
 }
