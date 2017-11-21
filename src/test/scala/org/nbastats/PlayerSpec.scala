@@ -1,15 +1,16 @@
 package org.nbastats
 
 import org.junit.Test
-import org.nbastats.model.{Player, Stat}
+import org.nbastats.model.{Player, Season}
 
 class PlayerSpec extends BaseSpec {
 
 
   @Test
   def player(): Unit = {
-    val kawhi: Player = Player("kawhi leonard", Seq(Stat("PPG", 28.5)))
-    kawhi.stats should not be empty
+    val kawhi: Player = Player("kawhi leonard", Seq(Season(2017, Seq.empty,
+      null)))
+    kawhi.season should not be empty
   }
 
 }
