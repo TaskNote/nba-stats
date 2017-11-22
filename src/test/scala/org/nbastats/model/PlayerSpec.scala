@@ -1,7 +1,7 @@
-package org.nbastats
+package org.nbastats.model
 
 import org.junit.Test
-import org.nbastats.model.{Player, Season}
+import org.nbastats.BaseSpec
 
 class PlayerSpec extends BaseSpec {
 
