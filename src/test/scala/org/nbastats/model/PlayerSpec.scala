@@ -8,7 +8,7 @@ class PlayerSpec extends BaseSpec {
 
   @Test
   def player(): Unit = {
-    val kawhi: Player = Player("kawhi leonard", Seq(Season(2017, Seq.empty,
+    val kawhi: Player = Player("kawhi leonard", null, null, Seq(Season(2017, Seq.empty,
       null)))
     kawhi.season should not be empty
   }
