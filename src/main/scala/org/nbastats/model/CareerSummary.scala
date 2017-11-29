@@ -4,6 +4,6 @@ case class CareerSummary(name: String,
                          games: Int,
                          pointsPerGame: Double,
                          reboundsPerGame: Double,
-                         assistsPerGame: Double) extends HasBasicStats {
+                         assistsPerGame: Double)  {
 
 }
