@@ -5,9 +5,10 @@ import java.sql.Date
 import scala.concurrent.duration.Duration
 
 case class GameStat(name: String,
-                    datePlayed: Date,
+                    datePlayed: String,
                     forTeam: String,
                     againstTeam: String,
+                    season: String,
                     seasonGame: Int,
                     fga: Int,
                     fgm: Int,
@@ -21,7 +22,7 @@ case class GameStat(name: String,
                     blocks: Int,
                     steals: Int,
                     turnovers: Int,
-                    timePlayed: Duration,
+                    timePlayed: String,
                     plusMinus: Int ) extends HasBasicStats {
 
   val games: Int = 1
