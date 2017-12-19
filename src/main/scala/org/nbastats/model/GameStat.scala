@@ -18,10 +18,13 @@ case class GameStat(name: String,
                     ftm: Int,
                     points: Int,
                     rebounds: Int,
+                    dRebounds: Int,
+                    oRebounds: Int,
                     assists: Int,
                     blocks: Int,
                     steals: Int,
                     turnovers: Int,
+                    personalFouls: Int,
                     timePlayed: String,
                     plusMinus: Int ) extends HasBasicStats {
 
