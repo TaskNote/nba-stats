@@ -5,6 +5,7 @@ import java.sql.Date
 import scala.concurrent.duration.Duration
 
 case class GameStat(name: String,
+
                     datePlayed: String,
                     forTeam: String,
                     againstTeam: String,
