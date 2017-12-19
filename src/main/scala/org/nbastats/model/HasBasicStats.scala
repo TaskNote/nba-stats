@@ -1,7 +1,6 @@
 package org.nbastats.model
 
-import scala.concurrent.duration.Duration
-
+import java.time.Duration
 
 /** Represents a total number of basketball stats for a given number of games.
   *
@@ -29,6 +28,5 @@ trait HasBasicStats {
   val turnovers: Int
   val timePlayed: Duration
   val plusMinus: Int
-
 }
 

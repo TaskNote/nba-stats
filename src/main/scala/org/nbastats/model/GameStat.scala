@@ -1,13 +1,13 @@
 package org.nbastats.model
 
-import java.sql.Date
-
-import scala.concurrent.duration.Duration
+import java.time.Duration
 
 case class GameStat(name: String,
-                    datePlayed: Date,
+
+                    datePlayed: String,
                     forTeam: String,
                     againstTeam: String,
+                    season: String,
                     seasonGame: Int,
                     fga: Int,
                     fgm: Int,
@@ -17,10 +17,13 @@ case class GameStat(name: String,
                     ftm: Int,
                     points: Int,
                     rebounds: Int,
+                    dRebounds: Int,
+                    oRebounds: Int,
                     assists: Int,
                     blocks: Int,
                     steals: Int,
                     turnovers: Int,
+                    personalFouls: Int,
                     timePlayed: Duration,
                     plusMinus: Int ) extends HasBasicStats {
 
