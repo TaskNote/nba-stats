@@ -1,8 +1,6 @@
 package org.nbastats.model
 
-import java.sql.Date
-
-import scala.concurrent.duration.Duration
+import java.time.Duration
 
 case class GameStat(name: String,
 
@@ -26,7 +24,7 @@ case class GameStat(name: String,
                     steals: Int,
                     turnovers: Int,
                     personalFouls: Int,
-                    timePlayed: String,
+                    timePlayed: Duration,
                     plusMinus: Int ) extends HasBasicStats {
 
   val games: Int = 1

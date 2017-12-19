@@ -1,11 +1,13 @@
 package org.nbastats.scraper
 
 import java.sql.Date
+import java.time.Duration
 
 import org.jsoup.Jsoup
 import org.jsoup.nodes.{Document, Element}
 import org.jsoup.select.Elements
 import org.nbastats.model.{CareerSummary, GameStat, Player}
+import org.nbastats.utils.TemporalParser
 import org.pmw.tinylog.Logger
 
 import scala.collection.JavaConverters._
@@ -99,7 +101,7 @@ object Scraper {
 
     val personalFouls: Int = countingStats(25).text.toInt
 
-    val timePlayed: String = countingStats(8).text
+    val timePlayed: Duration = TemporalParser.minutesToDuration(countingStats(8).text)
 
     val plusMinus: Int = countingStats(28).text.toInt
 
