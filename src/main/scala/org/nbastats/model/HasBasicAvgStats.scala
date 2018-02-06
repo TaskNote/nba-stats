@@ -27,5 +27,4 @@ trait HasBasicAvgStats extends HasBasicStats {
   val turnoversPerGame: Double = this.turnovers/games
   //val timePlayedPerGame: Duration = this.timePlayed/games
 
-
 }
