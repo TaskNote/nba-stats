@@ -25,7 +25,6 @@ trait HasBasicAvgStats extends HasBasicStats {
   val blocksPerGame: Double = this.blocks/games
   val stealsPerGame: Double = this.steals/games
   val turnoversPerGame: Double = this.turnovers/games
-  val timePlayedPerGame: Duration = this.timePlayed/games
-
+  //val timePlayedPerGame: Duration = this.timePlayed/games
 
 }

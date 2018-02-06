@@ -27,7 +27,7 @@ trait HasBasicStats {
   val blocks: Int
   val steals: Int
   val turnovers: Int
-  val timePlayed: Duration
+  val timePlayed: String
   val plusMinus: Int
 
 }
