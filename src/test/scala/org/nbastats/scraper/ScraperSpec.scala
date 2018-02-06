@@ -23,6 +23,8 @@ class ScraperSpec extends BaseSpec {
   def jrue(): Unit = {
     val jrue: GameStat = Scraper.scrapeGameStat("https://www.basketball-reference.com/players/h/holidjr01/gamelog/2010", 1)
 
+    jrue.fga should be (1)
+
 
 
 
